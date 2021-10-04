@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Doorway | Work</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+    <link href="css/media-style.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <style>
+      .owl-stage {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-box;
+          display: box;
+      }
+    </style>
+
+</head>
+<body>
+    <div class="home-slider">
+        <div class="up-nav">
+            <div class="box-box">
+                <p>Navigation</p>
+                <div class="box">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="work.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <ul class="social">
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <a class="logo" href="#"><img src="img/logo-dark.png" /></a>
+        <div class="work">
+            <div class="box">
+                <div class="left">
+                    <div class="carousel-work owl-carousel owl-theme">
+                        <div class="item">
+                            <a href="#"><img src="img/profile.jpg" /></a>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="img/profile.jpg" /></a>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="img/profile.jpg" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <h1><span>Our</span> Portfolio</h1>
+                    <div class="info-box">
+                        <div class="carousel-work owl-carousel owl-theme">
+                            <div class="item">
+                                <a href="#">
+                                <p>riffat aapa ki bahuein</p>
+                                <p class="dne">Script Writing</p>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                <p>riffat aapa ki bahuein</p>
+                                <p class="dne">Script Writing</p>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                <p>riffat aapa ki bahuein</p>
+                                <p class="dne">Script Writing</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arr">
+                        <img src="img/icons/left-slide.png" class="left-slide">
+                        <img src="img/icons/right-slide.png" class="right-slide">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="social-text dark">
+            <li><a href="#">FaceBook</a></li>
+            <li><a href="#">Linked In</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+        <span class="nav-opener">
+            <img class="nav-opner" src="img/icons/nav-dark.png">
+            <img class="nav-close" src="img/icons/cross.png" />
+        </span>
+        <div class="right-bar" style="display:none">
+            <div class="box">
+                <span class="nav-opener"><img src="img/icons/nav.png" /></span>
+                <ul class="social">
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+        <script>
+            $('.carousel').carousel({
+                interval: 5000
+            })
+            $('.carousel-home').owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: false,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1024: {
+                        items: 1
+                    }
+                }
+            })
+            var owl = $('.carousel-home');
+            $('#slider-prev').click(function () {
+                owl.trigger('prev.owl.carousel');
+            })
+            $('#slider-next').click(function () {
+                owl.trigger('next.owl.carousel');
+            })
+
+            $('.carousel-work').owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: false,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1024: {
+                        items: 1
+                    }
+                }
+            })
+            var owl2 = $('.carousel-work');
+            $('.arr .left-slide').click(function () {
+                owl2.trigger('prev.owl.carousel');
+            })
+            $('.arr .right-slide').click(function () {
+                owl2.trigger('next.owl.carousel');
+            })
+    </script>
+    
+</body>
+</html>

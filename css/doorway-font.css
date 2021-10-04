@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Olney-Light';
+  src: url('../fonts/Olney-Light.eot');
+  src: url('../fonts/Olney-Light.woff2') format('woff2'),
+       url('../fonts/Olney-Light.woff') format('woff'),
+       url('../fonts/Olney-Light.ttf') format('truetype'),
+       url('../fonts/Olney-Light.svg#Olney-Light') format('svg'),
+       url('../fonts/Olney-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

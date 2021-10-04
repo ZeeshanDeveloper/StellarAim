@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stellar A.I.M | About</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+    <link href="css/media-style.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <style>
+        .owl-stage {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-box;
+            display: box;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="home-slider">
+        <div class="up-nav">
+            <div class="box-box">
+
+                <div class="box">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <ul class="social">
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/smarketingstellar/"><i class="fa fa-instagram"
+                                aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <a class="logo" href="index.html"><img src="img/logo-dark.svg" /></a>
+        <div class="service-text about-text">
+            <h1>Who We Are</h1>
+
+            <p class="bold"><span class="tagline">Indulgent services, Luxury Living</span>Your personal space requires
+                more than an enduring
+                construction built for comfort. Your asset, whether residential or commercial is a reflection of your
+                true victories and successes. One seeped in luxury is a reward you deserve, a dwelling that recompenses
+                your tireless triumphs. Hence, the quest for serene views, masterful structures, and smart functionality
+                lie at the core of a hunt for any dream luxury property.</p>
+            <div class="cus-row">
+                <div class="left">
+                    <p>Add to this a mix of incomparable support and exceptional consolidated real estate services, and
+                        it results in a winning combination beyond any wildest expectation. At Stellar A.I.M, Pakistan’s
+                        premier luxury real estate marketplace, a plethora of such options lies within the clasp of your
+                        reality. <br><br>Situated in the heart of DHA Lahore, our consolidated agency offers exclusive
+                        luxury living and
+                        real estate solutions. Our services portfolio seamlessly integrates essential areas of luxury
+                        home market, providing exceptional services for design, real estate, professional consultation
+                        and marketing under one roof.</p>
+                </div>
+                <div class="right">
+                    <p>Whether it is design, construction, acquisition, execution or completion of properties, our
+                        dedicated efforts deliver a complete package of luxury to our clients. Our team consists of
+                        industry
+                        experts, holding years of necessitated experience with portfolios that edge at the precipice of
+                        excellence.
+                        <br><br>
+                        Our promise is to carefully measure up to your sensibilities, lifestyle and areas of
+                        sensitivity. Hence,
+                        you receive a careful selection of properties, that matches your affluence and taste.
+                        <br><br></p>
+                </div>
+            </div>
+            <p class="bold">Take the leap today.<br>Step into a novel way of matching to your dream abode with Stellar
+                A.I.M.
+            </p>
+        </div>
+        <ul class="social-text dark no-position">
+            <li><a href="#">FaceBook</a></li>
+            <li><a href="https://www.instagram.com/smarketingstellar/">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+        <span class="nav-opener">
+            <img class="nav-opner" src="img/icons/nav-dark.png">
+            <img class="nav-close" src="img/icons/cross.png" />
+        </span>
+        <div class="right-bar" style="display:none">
+            <div class="box">
+                <span class="nav-opener"><img src="img/icons/nav.png" /></span>
+                <ul class="social">
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script>
+        $('.carousel').carousel({
+            interval: 5000
+        })
+        $('.carousel-home').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1024: {
+                    items: 1
+                }
+            }
+        })
+        var owl = $('.carousel-home');
+        $('#slider-prev').click(function () {
+            owl.trigger('prev.owl.carousel');
+        })
+        $('#slider-next').click(function () {
+            owl.trigger('next.owl.carousel');
+        })
+
+    </script>
+
+</body>
+
+</html>
